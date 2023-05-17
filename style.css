@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#FCDEBE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color:#5a5550;
+    font-weight: normal;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    
+}
+
+h3{
+    color:#5a5550;
+    font-weight: normal;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    
+}
+
+footer{
+    background-color: #aaa89d;
+    margin: .5px;
+    height: 57px;
+}
+
+h4{
+    color:#5a5550;
+    font-weight: normal;
+    font-size: 0.7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    padding: 4px;
+    
+}
+
+.RedesSociales {
+    text-align: center; 
+}
+
+.CVLourdes {
+    color:#5a5550;
+    font-weight: normal;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align:justify;
+    text-indent: 25px;
+    background-color:gainsboro;
+    overflow: auto;
+    border-style: solid;
+    border-color: black;
+}
+
+.CVLourdes img {
+    float: left;
+    margin-right: 10px;
+}
+
+.CVLourdes p{
+    margin: 10px;
+}
+
+.menu{
+    background-color: #FCDEBE;
+    padding:0;
+    list-style: none;
+    margin: 20px auto;
+    text-align: center;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu li a{
+    padding: 20px;
+    margin: 10px;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    display: inline-block;
+}
+/*.menu li a:hover{
+    color:black;
+    background-color: #ebd8dc;
+    border-radius: 13%;
+}
+*/
+
+.menu li a:hover{
+    font-weight: bold;
+    color: #aa6666;
+    
+
+}
+    
+
+
+
+
+.imagenes{
+
+    text-align: center;
+}
+
+img:hover {
+    filter: opacity(40%)
+    contrast(90%)   
+}
+
+.contenedor-imagen {
+    position: relative; /* Establece el contenedor como posición relativa */
+    display: inline-block; /* Hace que el contenedor se comporte como un elemento en línea */
+  }
+
+.texto-encima {
+    position: absolute; /* Establece el texto como posición absoluta */
+    top: 92%; /* Mueve el texto hacia el 50% de la altura del contenedor */
+    left: 50%; /* Mueve el texto hacia el 50% de la anchura del contenedor */
+    transform: translate(-50%, -50%); /* Centra el texto en el centro del contenedor */
+    opacity: 0; /* Establece la opacidad en cero para que no se muestre inicialmente */
+    transition: opacity 0.5s ease; /* Agrega una transición suave */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(100, 98, 98);
+}
+
+    .contenedor-imagen:hover .texto-encima {
+        opacity: 1; /* Establece la opacidad en 1 para que se muestre cuando se hace hover en el contenedor */
+      }
+
+
+
+.contactForm {
+    max-width: 400px;
+    margin: auto;
+    order: 2px solid #ac4141; /* Establecer un borde de 2 píxeles de ancho y color gris claro */
+    padding: 20px;
+    text-transform: uppercase;
+  }
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  }
+
+
+.linkTitulo{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+
+.FormularioName {
+    width: 300px;
+    height: 25px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 18px;
+  }
+
+  .FormularioMail {
+    width: 300px;
+    height: 25px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 18px;
+  }
+
+  .FormularioTel {
+    width: 300px;
+    height: 25px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 18px;
+  }
+
+  .FormularioCountry {
+    width: 300px;
+    height: 25px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 18px;
+  }
+
+  .FormularioMessage {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 18px;
+  }
+
+  .FormularioSend {
+    width: 300px;
+    height: 25px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 18px;
+  }
+
+
+.ContactoWhatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+
