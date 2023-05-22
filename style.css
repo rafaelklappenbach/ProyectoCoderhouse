@@ -27,11 +27,7 @@ h3{
     
 }
 
-footer{
-    background-color: #aaa89d;
-    margin: .5px;
-    height: 57px;
-}
+
 
 h4{
     color:#5a5550;
@@ -40,6 +36,7 @@ h4{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
     padding: 4px;
+    text-align: center;
     
 }
 
@@ -74,13 +71,13 @@ h4{
 
 
 
-.contactForm {
+.formulario {
     max-width: 400px;
     margin: auto;
     order: 2px solid #ac4141; /* Establecer un borde de 2 píxeles de ancho y color gris claro */
     padding: 20px;
-    text-transform: uppercase;
   }
+  
 
 label, input, textarea {
     display: block;
@@ -163,6 +160,7 @@ main{
     
 }
 
+
 .header__menu{
     list-style: none;
     display: flex;
@@ -214,4 +212,48 @@ img:hover {
         opacity: 1; /* Establece la opacidad en 1 para que se muestre cuando se hace hover en el contenedor */
       }
 
+
 /*---------------------------------------------------FINALIZA IMAGEN---------------------------------------------------*/
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.10fr 0.25fr 0.25fr 0.25fr 0.10fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "car1 car2 car3"
+      "car4 car5 car6"
+      "car7 car8 car9"
+      "footer footer footer";
+  }
+  
+  .header { grid-area: header; }
+  
+  .car1 { grid-area: car1; }
+  
+  .car2 { grid-area: car2; }
+  
+  .car3 { grid-area: car3; }
+  
+  .car4 { grid-area: car4; }
+  
+  .car5 { grid-area: car5; }
+  
+  .car6 { grid-area: car6; }
+  
+  .car7 { grid-area: car7; }
+  
+  .car8 { grid-area: car8; }
+  
+  .car9 { grid-area: car9; }
+  
+  .footer { grid-area: footer; }
+
+  .footer{
+    background-color: rgb(163, 159, 159);
+    text-align: center;
+  }
+
+ 
