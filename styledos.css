@@ -4,7 +4,43 @@
     box-sizing: border-box;
 }
 
-body{
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.10fr 0.25fr 0.25fr 0.25fr 0.10fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "car1 car2 car3"
+      "car4 car5 car6"
+      "car7 car8 car9"
+      "footer footer footer";
+  }
+  
+  .header { grid-area: header; }
+  
+  .car1 { grid-area: car1; }
+  
+  .car2 { grid-area: car2; }
+  
+  .car3 { grid-area: car3; }
+  
+  .car4 { grid-area: car4; }
+  
+  .car5 { grid-area: car5; }
+  
+  .car6 { grid-area: car6; }
+  
+  .car7 { grid-area: car7; }
+  
+  .car8 { grid-area: car8; }
+  
+  .car9 { grid-area: car9; }
+  
+  .footer { grid-area: footer; }
+  
+  body{
     background-color:#FCDEBE;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -47,72 +83,17 @@ h4{
     text-align: center; 
 }
 
-.CVLourdes {
-    color:#5a5550;
-    font-weight: normal;
-    font-size: 1.3rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align:justify;
-    text-indent: 25px;
-    background-color:gainsboro;
-    overflow: auto;
-    border-style: solid;
-    border-color: black;
-}
-
-.CVLourdes img {
-    float: left;
-    margin-right: 10px;
-}
-
-.CVLourdes p{
-    margin: 10px;
-}
-
-    
-
-
-
-
-.contactForm {
-    max-width: 400px;
-    margin: auto;
-    order: 2px solid #ac4141; /* Establecer un borde de 2 píxeles de ancho y color gris claro */
-    padding: 20px;
-    text-transform: uppercase;
-  }
-
-label, input, textarea {
-    display: block;
-    margin-bottom: 4px;
-    text-transform: uppercase;
-  }
-
-
 .linkTitulo{
     text-decoration: none;
     color: inherit;
     cursor: pointer;
 }
 
-
-  .FormularioSend {
-    width: 300px;
-    height: 25px;
-    border: 2px solid #ccc;
-    background-color: #f9f9f9;
-    font-size: 18px;
-  }
-
-
 .ContactoWhatsapp {
     position: fixed;
     bottom: 20px;
     right: 30px;
 }
-
-
-/*------------------Acá empieza lo nuevo------------------*/
 
 main{
     flex-direction: row;
@@ -121,7 +102,6 @@ main{
     align-content:space-between;
 }
 
-/*-------------------------------------------TODO ESTO CORRESPONDE AL HEADER-------------------------------------------*/
 .header{
     background-color: #FCDEBE;
 }
@@ -147,11 +127,6 @@ main{
     overflow: hidden;
   }
   
-  .header__logo img {
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-  }
   
 .header__nav{
     width: 98%;
@@ -185,9 +160,6 @@ main{
     color: #FCDEBE;
     border-radius: 20px;
 }
-/*--------------------------------------------------FINALIZA EL HEADER-------------------------------------------------*/
-
-/*--------------------------------------------TODO ESTO CORRESPONDE A IMAGEN--------------------------------------------*/
 
 img:hover {
     filter: opacity(40%)
@@ -214,4 +186,5 @@ img:hover {
         opacity: 1; /* Establece la opacidad en 1 para que se muestre cuando se hace hover en el contenedor */
       }
 
-/*---------------------------------------------------FINALIZA IMAGEN---------------------------------------------------*/
+
+    
