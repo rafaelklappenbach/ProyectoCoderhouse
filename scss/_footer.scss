@@ -1,0 +1,100 @@
+body{
+    background-color: $ColorFondo;
+    font-family: $FontBody;
+    .containerCV{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.10fr 0.25fr 0.25fr 0.25fr 0.10fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header header header"
+          "CVimg CVtext CVtext"
+          "article article article"
+          "carro1 carro2 carro3"
+          "footer footer footer";
+          .footer{
+            grid-area: footer;
+            background-color: rgb(163, 159, 159);
+            text-align: center;
+            .FooterTitle{
+                color: $ColorH;
+                font-weight: normal;
+                font-size: 0.7rem;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: left;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                text-align: center;
+            }
+            .RedesSociales{
+                .LogoInstagram{
+                    text-align: center;
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                }
+                .LogoMail{
+                    text-align: center;
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                }
+            }
+            .ContactoWhatsapp{
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+            }
+        }
+ 
+          
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.10fr 0.25fr 0.25fr 0.25fr 0.10fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header header header"
+          "car1 car2 car3"
+          "car4 car5 car6"
+          "car7 car8 car9"
+          "footer footer footer";
+        .footer{
+            grid-area: footer;
+            background-color: rgb(163, 159, 159);
+            text-align: center;
+            .FooterTitle{
+                color:#5a5550;
+                font-weight: normal;
+                font-size: 0.7rem;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: left;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                text-align: center;
+            }
+            .RedesSociales{
+                .LogoInstagram{
+                    text-align: center;
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                }
+                .LogoMail{
+                    text-align: center;
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                }
+            }
+            .ContactoWhatsapp{
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+            }
+        }
+        
+    
+    }
+}

@@ -1,0 +1,373 @@
+body{
+    background-color: $ColorFondo;
+    font-family: $FontBody;
+    .containerCV{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.10fr 0.25fr 0.25fr 0.25fr 0.10fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header header header"
+          "CVimg CVtext CVtext"
+          "article article article"
+          "carro1 carro2 carro3"
+          "footer footer footer";
+        .CVimg{
+            grid-area: CVimg;
+            padding-left: 50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .CVtext{
+            grid-area: CVtext;
+            justify-content: center;
+            text-align: center;
+            padding: 50px;
+
+        }
+
+        .article{
+            grid-area: article;
+            h3{
+                text-align: center;
+                padding-left: 50px;
+            }
+        }
+        
+        .carro1{
+            grid-area: carro1;
+            &:hover{
+                filter: opacity(40%)
+                contrast(90%)   
+            }
+            .carousel1{
+                .carousel-inner{
+                    .texto-encima{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        opacity: 0;
+                        transition: opacity 0.5s ease; 
+                        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        color:rgb(100, 98, 98);
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                    .carousel-item{
+                        
+                    }
+                }
+            }
+        }
+        .carro2{
+            grid-area: carro2;
+            &:hover{
+                filter: opacity(40%)
+                contrast(90%)   
+            }
+            .carousel2{
+                .carousel-inner{
+                    .texto-encima{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        opacity: 0;
+                        transition: opacity 0.5s ease; 
+                        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        color:rgb(100, 98, 98);
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                    .carousel-item{
+                        
+                    }
+                }
+            }
+        }
+        .carro3{
+            grid-area: carro3;
+            &:hover{
+                filter: opacity(40%)
+                contrast(90%)   
+            }
+            .carousel3{
+                .carousel-inner{
+                    .texto-encima{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        opacity: 0;
+                        transition: opacity 0.5s ease; 
+                        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        color:rgb(100, 98, 98);
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                    .carousel-item{
+                        
+                    }
+                }
+            }
+        }
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.10fr 0.25fr 0.25fr 0.25fr 0.10fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header header header"
+          "car1 car2 car3"
+          "car4 car5 car6"
+          "car7 car8 car9"
+          "footer footer footer";
+
+        .car1{
+            grid-area: car1;
+            &:hover{
+                filter: opacity(40%)
+                contrast(90%)   
+            }
+            .carousel1{
+                .carousel-inner{
+                    .texto-encima{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        opacity: 0;
+                        transition: opacity 0.5s ease; 
+                        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        color:rgb(100, 98, 98);
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                    .carousel-item{
+                        
+                    }
+                }
+            }
+            
+        }
+
+        .car2{
+            grid-area: car2;
+            &:hover{
+                filter: opacity(40%)
+                contrast(90%)   
+            }
+            .carousel2{
+                .carousel-inner{
+                    .carousel-item{
+                        .texto-encima{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            opacity: 0;
+                            transition: opacity 0.5s ease; 
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            color:rgb(100, 98, 98);
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+
+        .car3{
+            grid-area: car3;
+            &:hover{
+                filter: opacity(40%)
+                contrast(90%)   
+            }
+            .carousel3{
+                .carousel-inner{
+                    .carousel-item{
+                        .texto-encima{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            opacity: 0;
+                            transition: opacity 0.5s ease; 
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            color:rgb(100, 98, 98);
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+
+        .car4{
+            grid-area: car4;
+            &:hover{
+                filter: opacity(40%)
+                contrast(90%)   
+            }
+            .carousel4{
+                .carousel-inner{
+                    .carousel-item{
+                        .texto-encima{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            opacity: 0;
+                            transition: opacity 0.5s ease; 
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            color:rgb(100, 98, 98);
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+
+        .car5{
+            grid-area: car5;
+            &:hover{
+                filter: opacity(40%)
+                contrast(90%)   
+            }
+            .carousel5{
+                .carousel-inner{
+                    .carousel-item{
+                        .texto-encima{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            opacity: 0;
+                            transition: opacity 0.5s ease; 
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            color:rgb(100, 98, 98);
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+
+        .car6{
+            grid-area: car6;
+            &:hover{
+                filter: opacity(40%)
+                contrast(90%)   
+            }
+            .carousel6{
+                .carousel-inner{
+                    .carousel-item{
+                        .texto-encima{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            opacity: 0;
+                            transition: opacity 0.5s ease; 
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            color:rgb(100, 98, 98);
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+
+        .car7{
+            grid-area: car7;
+            &:hover{
+                filter: opacity(40%)
+                contrast(90%)   
+            }
+            .carousel7{
+                .carousel-inner{
+                    .carousel-item{
+                        .texto-encima{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            opacity: 0;
+                            transition: opacity 0.5s ease; 
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            color:rgb(100, 98, 98);
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+
+        .car8{
+            grid-area: car8;
+            &:hover{
+                filter: opacity(40%)
+                contrast(90%)   
+            }
+            .carousel8{
+                .carousel-inner{
+                    .carousel-item{
+                        .texto-encima{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            opacity: 0;
+                            transition: opacity 0.5s ease; 
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            color:rgb(100, 98, 98);
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+
+        .car9{
+            grid-area: car9;
+            &:hover{
+                filter: opacity(40%)
+                contrast(90%)   
+            }
+            .carousel9{
+                .carousel-inner{
+                    .carousel-item{
+                        .texto-encima{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            opacity: 0;
+                            transition: opacity 0.5s ease; 
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            color:rgb(100, 98, 98);
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+    }
+}

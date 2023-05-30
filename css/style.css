@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #FCDEBE;
+  font-family: Arial, Helvetica, sans-serif; }
+  body .containerCV {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.10fr 0.25fr 0.25fr 0.25fr 0.10fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header header header" "CVimg CVtext CVtext" "article article article" "carro1 carro2 carro3" "footer footer footer"; }
+    body .containerCV .header {
+      grid-area: header; }
+      body .containerCV .header h1 {
+        text-align: center; }
+        body .containerCV .header h1 .header__titulo {
+          color: black;
+          font-weight: normal;
+          text-decoration: none;
+          font-size: 2rem;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          text-align: center; }
+      body .containerCV .header .header__subtitulo {
+        color: #5A5550;
+        font-weight: normal;
+        font-size: 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center; }
+      body .containerCV .header .navbar .container-fluid {
+        background-color: #FCDEBE; }
+        body .containerCV .header .navbar .container-fluid .navbar-brand {
+          border: white 3px solid;
+          border-radius: 50%;
+          padding: 7px; }
+          body .containerCV .header .navbar .container-fluid .navbar-brand .profile {
+            width: 50px;
+            border-radius: 50%; }
+            body .containerCV .header .navbar .container-fluid .navbar-brand .profile:hover {
+              filter: opacity(40%) contrast(90%); }
+        body .containerCV .header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover {
+          background-color: black;
+          border-radius: 20px; }
+        body .containerCV .header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+          color: white; }
+  body .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.10fr 0.25fr 0.25fr 0.25fr 0.10fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header header header" "car1 car2 car3" "car4 car5 car6" "car7 car8 car9" "footer footer footer"; }
+    body .container .header {
+      grid-area: header; }
+      body .container .header h1 {
+        text-align: center; }
+        body .container .header h1 .header__titulo {
+          color: black;
+          font-weight: normal;
+          text-decoration: none;
+          font-size: 2rem;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          text-align: center; }
+      body .container .header .header__subtitulo {
+        color: #5A5550;
+        font-weight: normal;
+        font-size: 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center; }
+      body .container .header .navbar .container-fluid {
+        background-color: #FCDEBE; }
+        body .container .header .navbar .container-fluid .navbar-brand {
+          border: white 3px solid;
+          border-radius: 50%;
+          padding: 7px; }
+          body .container .header .navbar .container-fluid .navbar-brand .profile {
+            width: 50px;
+            border-radius: 50%; }
+            body .container .header .navbar .container-fluid .navbar-brand .profile:hover {
+              filter: opacity(40%) contrast(90%); }
+        body .container .header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover {
+          background-color: black;
+          border-radius: 20px; }
+        body .container .header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+          color: white; }
+
+body {
+  background-color: #FCDEBE;
+  font-family: Arial, Helvetica, sans-serif; }
+  body .containerCV {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.10fr 0.25fr 0.25fr 0.25fr 0.10fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header header header" "CVimg CVtext CVtext" "article article article" "carro1 carro2 carro3" "footer footer footer"; }
+    body .containerCV .CVimg {
+      grid-area: CVimg;
+      padding-left: 50px;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    body .containerCV .CVtext {
+      grid-area: CVtext;
+      justify-content: center;
+      text-align: center;
+      padding: 50px; }
+    body .containerCV .article {
+      grid-area: article; }
+      body .containerCV .article h3 {
+        text-align: center;
+        padding-left: 50px; }
+    body .containerCV .carro1 {
+      grid-area: carro1; }
+      body .containerCV .carro1:hover {
+        filter: opacity(40%) contrast(90%); }
+      body .containerCV .carro1 .carousel1 .carousel-inner .texto-encima {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #646262; }
+        body .containerCV .carro1 .carousel1 .carousel-inner .texto-encima:hover {
+          opacity: 1; }
+    body .containerCV .carro2 {
+      grid-area: carro2; }
+      body .containerCV .carro2:hover {
+        filter: opacity(40%) contrast(90%); }
+      body .containerCV .carro2 .carousel2 .carousel-inner .texto-encima {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #646262; }
+        body .containerCV .carro2 .carousel2 .carousel-inner .texto-encima:hover {
+          opacity: 1; }
+    body .containerCV .carro3 {
+      grid-area: carro3; }
+      body .containerCV .carro3:hover {
+        filter: opacity(40%) contrast(90%); }
+      body .containerCV .carro3 .carousel3 .carousel-inner .texto-encima {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #646262; }
+        body .containerCV .carro3 .carousel3 .carousel-inner .texto-encima:hover {
+          opacity: 1; }
+  body .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.10fr 0.25fr 0.25fr 0.25fr 0.10fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header header header" "car1 car2 car3" "car4 car5 car6" "car7 car8 car9" "footer footer footer"; }
+    body .container .car1 {
+      grid-area: car1; }
+      body .container .car1:hover {
+        filter: opacity(40%) contrast(90%); }
+      body .container .car1 .carousel1 .carousel-inner .texto-encima {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #646262; }
+        body .container .car1 .carousel1 .carousel-inner .texto-encima:hover {
+          opacity: 1; }
+    body .container .car2 {
+      grid-area: car2; }
+      body .container .car2:hover {
+        filter: opacity(40%) contrast(90%); }
+      body .container .car2 .carousel2 .carousel-inner .carousel-item .texto-encima {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #646262; }
+    body .container .car3 {
+      grid-area: car3; }
+      body .container .car3:hover {
+        filter: opacity(40%) contrast(90%); }
+      body .container .car3 .carousel3 .carousel-inner .carousel-item .texto-encima {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #646262; }
+    body .container .car4 {
+      grid-area: car4; }
+      body .container .car4:hover {
+        filter: opacity(40%) contrast(90%); }
+      body .container .car4 .carousel4 .carousel-inner .carousel-item .texto-encima {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #646262; }
+    body .container .car5 {
+      grid-area: car5; }
+      body .container .car5:hover {
+        filter: opacity(40%) contrast(90%); }
+      body .container .car5 .carousel5 .carousel-inner .carousel-item .texto-encima {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #646262; }
+    body .container .car6 {
+      grid-area: car6; }
+      body .container .car6:hover {
+        filter: opacity(40%) contrast(90%); }
+      body .container .car6 .carousel6 .carousel-inner .carousel-item .texto-encima {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #646262; }
+    body .container .car7 {
+      grid-area: car7; }
+      body .container .car7:hover {
+        filter: opacity(40%) contrast(90%); }
+      body .container .car7 .carousel7 .carousel-inner .carousel-item .texto-encima {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #646262; }
+    body .container .car8 {
+      grid-area: car8; }
+      body .container .car8:hover {
+        filter: opacity(40%) contrast(90%); }
+      body .container .car8 .carousel8 .carousel-inner .carousel-item .texto-encima {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #646262; }
+    body .container .car9 {
+      grid-area: car9; }
+      body .container .car9:hover {
+        filter: opacity(40%) contrast(90%); }
+      body .container .car9 .carousel9 .carousel-inner .carousel-item .texto-encima {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #646262; }
+
+body {
+  background-color: #FCDEBE;
+  font-family: Arial, Helvetica, sans-serif; }
+  body .containerCV {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.10fr 0.25fr 0.25fr 0.25fr 0.10fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header header header" "CVimg CVtext CVtext" "article article article" "carro1 carro2 carro3" "footer footer footer"; }
+    body .containerCV .footer {
+      grid-area: footer;
+      background-color: #a39f9f;
+      text-align: center; }
+      body .containerCV .footer .FooterTitle {
+        color: #5A5550;
+        font-weight: normal;
+        font-size: 0.7rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: left;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        text-align: center; }
+      body .containerCV .footer .RedesSociales .LogoInstagram {
+        text-align: center;
+        padding-top: 4px;
+        padding-bottom: 4px; }
+      body .containerCV .footer .RedesSociales .LogoMail {
+        text-align: center;
+        padding-top: 4px;
+        padding-bottom: 4px; }
+      body .containerCV .footer .ContactoWhatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 30px; }
+  body .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.10fr 0.25fr 0.25fr 0.25fr 0.10fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header header header" "car1 car2 car3" "car4 car5 car6" "car7 car8 car9" "footer footer footer"; }
+    body .container .footer {
+      grid-area: footer;
+      background-color: #a39f9f;
+      text-align: center; }
+      body .container .footer .FooterTitle {
+        color: #5a5550;
+        font-weight: normal;
+        font-size: 0.7rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: left;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        text-align: center; }
+      body .container .footer .RedesSociales .LogoInstagram {
+        text-align: center;
+        padding-top: 4px;
+        padding-bottom: 4px; }
+      body .container .footer .RedesSociales .LogoMail {
+        text-align: center;
+        padding-top: 4px;
+        padding-bottom: 4px; }
+      body .container .footer .ContactoWhatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 30px; }

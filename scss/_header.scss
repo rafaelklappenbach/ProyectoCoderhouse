@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box,
+}
+body{
+    background-color: $ColorFondo;
+    font-family: $FontBody;
+    .containerCV{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.10fr 0.25fr 0.25fr 0.25fr 0.10fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header header header"
+          "CVimg CVtext CVtext"
+          "article article article"
+          "carro1 carro2 carro3"
+          "footer footer footer";
+        .header{
+            grid-area: header;
+            h1{
+                text-align: center;
+                .header__titulo{
+                    color: $ColorBlack;
+                    font-weight: normal;
+                    text-decoration: none;
+                    font-size: 2rem;
+                    font-family: $FontH1;
+                    text-align: center;
+                }
+            }
+                .header__subtitulo{
+                    color: $ColorH;
+                    font-weight: normal;
+                    font-size: 1rem;
+                    font-family: $FontH1;
+                    text-align: center; 
+                }
+                .navbar{
+                    .container-fluid{
+                        background-color: $ColorFondo;
+                        .navbar-brand{
+                            border: $ColorWhite 3px solid;
+                            border-radius: 50%;
+                            padding: 7px;
+                            .profile{
+                                width: 50px;
+                                border-radius: 50%;
+                                &:hover{
+                                    filter: opacity(40%)
+                                    contrast(90%)  
+                                }
+                            }
+                        }
+                        .collapse{
+                            .navbar-nav{
+                                .nav-item{
+                                &:hover{
+                                    background-color: $ColorBlack;
+                                    border-radius: 20px;
+                                }
+                                    .nav-link{
+                                        &:hover{
+                                            color: $ColorWhite;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+        }
+
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.10fr 0.25fr 0.25fr 0.25fr 0.10fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header header header"
+          "car1 car2 car3"
+          "car4 car5 car6"
+          "car7 car8 car9"
+          "footer footer footer";
+        .header{
+            grid-area: header;
+            h1{
+                text-align: center;
+                .header__titulo{
+                    color: $ColorBlack;
+                    font-weight: normal;
+                    text-decoration: none;
+                    font-size: 2rem;
+                    font-family: $FontH1;
+                    text-align: center;
+                }
+            }
+                .header__subtitulo{
+                    color: $ColorH;
+                    font-weight: normal;
+                    font-size: 1rem;
+                    font-family: $FontH1;
+                    text-align: center; 
+                }
+                .navbar{
+                    .container-fluid{
+                        background-color: $ColorFondo;
+                        .navbar-brand{
+                            border: $ColorWhite 3px solid;
+                            border-radius: 50%;
+                            padding: 7px;
+                            .profile{
+                                width: 50px;
+                                border-radius: 50%;
+                                &:hover{
+                                    filter: opacity(40%)
+                                    contrast(90%)  
+                                }
+                            }
+                        }
+                        .collapse{
+                            .navbar-nav{
+                                .nav-item{
+                                &:hover{
+                                    background-color: $ColorBlack;
+                                    border-radius: 20px;
+                                }
+                                    .nav-link{
+                                        &:hover{
+                                            color: $ColorWhite;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+        }
+    }
+}
