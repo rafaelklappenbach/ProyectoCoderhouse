@@ -32,46 +32,46 @@ body{
                     text-align: center;
                 }
             }
-                .header__subtitulo{
-                    color: $ColorH;
-                    font-weight: normal;
-                    font-size: 1rem;
-                    font-family: $FontH1;
-                    text-align: center; 
-                }
-                .navbar{
-                    .container-fluid{
-                        background-color: $ColorFondo;
-                        .navbar-brand{
-                            border: $ColorWhite 3px solid;
+            .header__subtitulo{
+                color: $ColorH;
+                font-weight: normal;
+                font-size: 1rem;
+                font-family: $FontH1;
+                text-align: center; 
+            }
+            .navbar{
+                .container-fluid{
+                    background-color: $ColorFondo;
+                    .navbar-brand{
+                        border: $ColorWhite 3px solid;
+                        border-radius: 50%;
+                        padding: 7px;
+                        .profile{
+                            width: 50px;
                             border-radius: 50%;
-                            padding: 7px;
-                            .profile{
-                                width: 50px;
-                                border-radius: 50%;
-                                &:hover{
-                                    filter: opacity(40%)
-                                    contrast(90%)  
-                                }
+                            &:hover{
+                                filter: opacity(40%)
+                                contrast(90%)  
                             }
                         }
-                        .collapse{
-                            .navbar-nav{
-                                .nav-item{
-                                &:hover{
-                                    background-color: $ColorBlack;
-                                    border-radius: 20px;
-                                }
-                                    .nav-link{
-                                        &:hover{
-                                            color: $ColorWhite;
-                                        }
+                    }
+                    .collapse{
+                        .navbar-nav{
+                            .nav-item{
+                            &:hover{
+                                background-color:$ColorBlack;
+                                border-radius: 20px;
+                            }
+                                .nav-link{
+                                    &:hover{
+                                        color: $ColorWhite;
                                     }
                                 }
                             }
                         }
                     }
                 }
+            }
         }
 
     }

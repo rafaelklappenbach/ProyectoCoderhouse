@@ -109,7 +109,8 @@ body {
       grid-area: CVtext;
       justify-content: center;
       text-align: center;
-      padding: 50px; }
+      padding: 50px;
+      border-color: black; }
     body .containerCV .article {
       grid-area: article; }
       body .containerCV .article h3 {
